@@ -199,7 +199,7 @@ const NDAAReferenceInterface = () => {
     const loadData = async () => {
       try {
         // Fetch the Excel file from the public folder
-        const response = await fetch('/NDAA_Bill_References_V5_with_text.xlsx');
+        const response = await fetch('./NDAA_Bill_References_V5_with_text.xlsx');
         
         if (!response.ok) {
           throw new Error(`Failed to fetch file: ${response.statusText}`);
