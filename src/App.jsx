@@ -841,21 +841,21 @@ const NDAAReferenceInterface = () => {
                                  </div>
                               </div>
                               
+                              {group.rows[0]['H.R. 5009 ENR Text'] && (
+                                <div>
+                                  <h4 className="font-medium text-gray-600 mb-2">H.R. 5009 Enrolled Bill Text</h4>
+                                  <div className="bg-green-50 p-3 rounded border text-sm max-h-40 overflow-y-auto">
+                                    {group.rows[0]['H.R. 5009 ENR Text']}
+                                  </div>
+                                </div>
+                              )}
+                              
                               {/* Joint Explanatory Statement */}
                               {group.rows[0].full_text && (
                                 <div>
                                   <h4 className="font-medium text-gray-600 mb-2">Joint Explanatory Statement</h4>
                                   <div className="bg-blue-50 p-3 rounded border text-sm max-h-40 overflow-y-auto whitespace-pre-wrap">
                                     {group.rows[0].full_text}
-                                  </div>
-                                </div>
-                              )}
-                              
-                              {group.rows[0]['H.R. 5009 ENR Text'] && (
-                                <div>
-                                  <h4 className="font-medium text-gray-600 mb-2">H.R. 5009 Enrolled Bill Text</h4>
-                                  <div className="bg-green-50 p-3 rounded border text-sm max-h-40 overflow-y-auto">
-                                    {group.rows[0]['H.R. 5009 ENR Text']}
                                   </div>
                                 </div>
                               )}
