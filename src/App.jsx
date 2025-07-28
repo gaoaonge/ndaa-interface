@@ -962,11 +962,11 @@ const NDAAReferenceInterface = () => {
                                 </div>
                               )}
                               
-                              {/* Conference Committee text (from full_text) */}
+                              {/* Joint Explanatory Statement (from full_text) */}
                               <div>
-                                <h4 className="font-medium text-gray-600 mb-3">Conference Committee Report</h4>
+                                <h4 className="font-medium text-gray-600 mb-3">Joint Explanatory Statement</h4>
                                 <div className="bg-blue-50 border border-blue-200 rounded p-3 text-sm max-h-60 overflow-y-auto whitespace-pre-wrap">
-                                  {group.rows[0].full_text || 'No conference text available'}
+                                  {group.rows[0].full_text || 'No explanatory statement text available'}
                                 </div>
                               </div>
                             </div>
